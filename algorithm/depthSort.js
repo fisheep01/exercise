@@ -14,10 +14,10 @@ var arr = [
 ]
 
 /**
- * @param array
- * @returns array
+ * @param {array}
+ * @return {array}
  */
-function depthSort (arr) {
+function depthSort(arr) {
   return [...new Set(arr.flat(Infinity))].sort((a, b) => a > b)
 }
 
